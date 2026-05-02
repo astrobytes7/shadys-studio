@@ -1,9 +1,11 @@
-{
-    "TOKEN": "REPLACED_BY_ENV",
+require('dotenv').config();
+
+module.exports = {
+    "TOKEN": process.env.DISCORD_TOKEN,
     "APP_ID": "1473086591617728532",
     "MONGOURL": "",
     "GUILD_ID": "1472057214469537812",
     "prefix": "-",
     "DOCK_API": "8WXMdIbZ2T0S.RDrD66.wqA3klEr3CCOKs3ombDDNpzkCtRC",
     "FOOTER_BANNER": "https://media.discordapp.net/ephemeral-attachments/1498054126297419867/1498054186191818762/Shady_Banners.png?ex=69f114ae&is=69efc32e&hm=ffc64b661ceebc7842884e2f0cdde81f1f5161ea13641502cf0fa359ef05b466&=&format=webp&quality=lossless&width=2834&height=178"
-}
+};

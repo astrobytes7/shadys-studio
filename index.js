@@ -13,7 +13,7 @@ const client = new Client({
     ]
 });
 
-client.config = require('./config.json');
+client.config = require('./config.js');
 client.cooldowns = new Map();
 client.cache = new Map();
 client.messages = new Map();
@@ -31,7 +31,7 @@ require('./utils/RegisterCommands.js')(client);
     console.log('I have connected to the database succesfully');
 })();
 
-client.login(process.env.DISCORD_TOKEN || client.config.TOKEN);
+client.login(client.config.TOKEN);
 
 client.on(Events.ClientReady, () => {
     console.log(`Logged in as ${client.user.tag}`);
