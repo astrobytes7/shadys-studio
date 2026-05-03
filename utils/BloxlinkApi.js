@@ -1,5 +1,5 @@
 const axios = require('axios');
-const BLOXLINK_API_KEY = "Bloxlink Key";
+const BLOXLINK_API_KEY = "762924ad-3118-40f1-9667-4ad142f1f557";
 
 async function getRobloxAccount(guildId, userId) {
   try {
@@ -32,7 +32,7 @@ async function getRobloxAccount(guildId, userId) {
     };
   } catch (error) {
     if (error.response?.status !== 404) {
-        console.error('Bloxlink API Error:', error.response?.data || error.message);
+      console.error('Bloxlink API Error:', error.response?.data || error.message);
     }
     return null;
   }
