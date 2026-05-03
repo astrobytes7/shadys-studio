@@ -1,7 +1,7 @@
 {
-  "clothing": "closed",
-  "livery": "closed",
-  "graphics": "closed",
-  "discord": "closed",
-  "photography": "closed"
+  "clothing": "opened",
+  "livery": "opened",
+  "graphics": "opened",
+  "discord": "opened",
+  "photography": "opened"
 }

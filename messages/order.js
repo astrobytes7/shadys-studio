@@ -22,11 +22,12 @@ module.exports = {
 			.setColor('#2b2d31')
 			.setDescription('All your orders in one place. Submit requests quickly and track their progress in real time. Access support whenever you need it, without leaving the panel. Managing your workflow has never been this simple.')
 			.addFields(
-				{ name: 'Clothing', value: '`<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>`', inline: true },
-				{ name: 'Livery', value: '`<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>`', inline: true },
-				{ name: 'Graphics', value: '`<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>`', inline: true },
-				{ name: 'Discord', value: '`<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>`', inline: true },
-				{ name: 'Photography', value: '`<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>`', inline: true },
+				{ name: 'Clothing', value: '<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>', inline: true },
+				{ name: 'Livery', value: '<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>', inline: true },
+				{ name: 'Graphics', value: '<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>', inline: true },
+				{ name: 'Discord', value: '<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>', inline: true },
+				{ name: 'Photography', value: '<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>', inline: true },
+				{ name: 'Alting', value: '<:Closed1:1486167767735468215><:Closed2:1486167852493967452><:Closed3:1486167942860111882>', inline: true },
 			)
 			.setImage('https://media.discordapp.net/attachments/1465184567970496532/1498076620907352205/Shady_Banners.png?ex=69f869d3&is=69f71853&hm=794dffa170d7cb7b2599328adc4666d4fb223eada0d878738ab85f9cf497de71&=&format=webp&quality=lossless&width=2605&height=163');
 

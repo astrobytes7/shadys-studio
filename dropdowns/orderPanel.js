@@ -117,7 +117,7 @@ module.exports = {
 					new ButtonBuilder()
 						.setCustomId('claim:button')
 						.setLabel('Claim')
-						.setStyle(ButtonStyle.Primary),
+						.setStyle(ButtonStyle.Secondary),
 					new ButtonBuilder()
 						.setCustomId('close:button')
 						.setLabel('Close')
