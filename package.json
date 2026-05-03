@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sync": "git add . && git commit -m \"shady update :)\" && git push"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +11,9 @@
   "description": "",
   "dependencies": {
     "@discordjs/rest": "^2.6.1",
+    "axios": "^1.16.0",
     "discord-api-types": "^0.38.47",
+    "discord-html-transcripts": "^3.2.0",
     "discord.js": "^14.26.4",
     "dotenv": "^17.4.2",
     "mongoose": "^9.6.1"

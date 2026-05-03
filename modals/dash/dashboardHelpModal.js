@@ -7,7 +7,7 @@ const {
     ActionRowBuilder
   } = require('discord.js');
   const Ticket = require('../../models/dashboardHelpSchema');
-  const { getRobloxAccount } = require('../utils/BloxlinkApi');
+  const { getRobloxAccount } = require('../../utils/BloxlinkApi');
   
   module.exports = {
     customID: 'dashboardHelpModal',

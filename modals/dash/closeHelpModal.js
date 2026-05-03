@@ -1,6 +1,6 @@
 const { AttachmentBuilder, EmbedBuilder } = require('discord.js');
   const DiscordTranscripts = require('discord-html-transcripts');
-  const DashboardHelpTicket = require('../models/dashboardHelpSchema');
+  const DashboardHelpTicket = require('../../models/dashboardHelpSchema');
   
   const LOG_CHANNEL_ID = ''; // Replace with transcript channel id
   
