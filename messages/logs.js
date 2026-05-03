@@ -2,7 +2,7 @@ module.exports = {
     name: 'logs',
     description: 'Fetch last 50 logs from terminal',
     async execute(message, args, client) {
-        const requiredRoleId = "i";
+        const requiredRoleId = "1472057214557622355";
 
         if (!message.member.roles.cache.has(requiredRoleId)) {
             return;
