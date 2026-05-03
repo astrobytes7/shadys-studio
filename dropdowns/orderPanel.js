@@ -51,6 +51,11 @@ module.exports = {
 				categoryId = '1497762711373611149'; // replace with your category id
 				designerRole = '1474515716043575508'; // replace with your designer role
 				break;
+
+			case 'alting':
+				categoryId = '1497762711373611149'; // Using photography category as placeholder
+				designerRole = '1472057214670995562'; // Using designer role as placeholder
+				break;
 		}
 
 		const channel = await interaction.guild.channels.create({
@@ -100,7 +105,7 @@ module.exports = {
 
 		const name = type.charAt(0).toUpperCase() + type.slice(1);
 
-		await channel.send({
+		const orderMessage = await channel.send({
 			content: `<@&${designerRole}> | ${interaction.user}`,
 			embeds: [
 				new EmbedBuilder()
@@ -125,6 +130,17 @@ module.exports = {
 				)
 			]
 		});
+
+		try {
+			const thread = await orderMessage.startThread({
+				name: 'References',
+				autoArchiveDuration: 60,
+				reason: `References for ${interaction.user.username}'s ${type} order.`
+			});
+			await thread.send(`${interaction.user}, please add any references or additional details for your order here!`);
+		} catch (error) {
+			console.error('Error creating reference thread:', error);
+		}
 
 		await interaction.editReply(`Your order has been created; ${channel}`);
 	}

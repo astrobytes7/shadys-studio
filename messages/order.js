@@ -51,6 +51,9 @@ module.exports = {
 					new StringSelectMenuOptionBuilder()
 						.setValue('photography')
 						.setLabel('Photography'),
+					new StringSelectMenuOptionBuilder()
+						.setValue('alting')
+						.setLabel('Alting'),
 				)
 		);
 
