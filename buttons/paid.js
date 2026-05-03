@@ -8,7 +8,7 @@ module.exports = {
 
         if (!interaction.member.roles.cache.has(requiredRoleId)) {
             return interaction.reply({
-                content: 'You do not have permission to use this button.',
+                content: '<:Click:1497789500175290519> You do not have permission to use this button.',
                 ephemeral: true
             });
         }

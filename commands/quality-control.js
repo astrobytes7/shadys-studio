@@ -16,7 +16,7 @@ module.exports = {
 
         if (!interaction.member.roles.cache.has(requiredRoleId)) {
             return interaction.reply({
-                content: 'You do not have permission to use this command.',
+                content: '<:Click:1497789500175290519> You do not have permission to use this command.',
                 ephemeral: true
             });
         }
@@ -67,7 +67,7 @@ module.exports = {
             });
 
             const threadMessage = `${userToPing} A thread has been created for you to discuss your work with Quality Assurance members.`;
-            
+
             if (imageAttachment) {
                 // Just send the URL instead of re-uploading to avoid 40005 "Entity too large"
                 await thread.send({ content: `${threadMessage}\n\n**Attachment:** ${imageAttachment.url}` });
