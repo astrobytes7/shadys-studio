@@ -54,7 +54,12 @@ client.on('messageCreate', async (message) => {
         await command.execute(message, args, client);
     } catch (error) {
         console.error(error);
-        message.reply(`There was an error running this command:\n\`\`\`${error.message || error}\`\`\``);
+        try {
+            await message.reply(`There was an error running this command:\n\`\`\`${error.message || error}\`\`\``);
+        } catch (replyError) {
+            // If reply fails (e.g. message deleted), try sending to channel
+            await message.channel.send(`There was an error running this command:\n\`\`\`${error.message || error}\`\`\``).catch(() => {});
+        }
     }
 });
 

@@ -11,7 +11,7 @@ module.exports = {
   name: "dash",
   cooldown: 5,
   async execute(message) {
-    await message.delete()
+    await message.delete().catch(() => {});
     const requiredRoleId = "1472057214557622355"; // Replace with the actual role ID
 
     if (!message.member.roles.cache.has(requiredRoleId)) {
