@@ -40,14 +40,10 @@ module.exports = {
       .addOptions([
         {
           label: "Rules",
-          emoji: '', // Replace with your emoji name and id
-          description: '', // Replace with your description
           value: "dashboardGuidelines",
         },
         {
           label: "About us",
-          emoji: '', // Replace with your emoji name and id
-          description: '', // Replace with your description
           value: "dashboardAboutUs",
         },
       ]);
