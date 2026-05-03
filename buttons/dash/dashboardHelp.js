@@ -13,7 +13,7 @@ const {
   
         const modal = new ModalBuilder()
           .setCustomId('dashboardHelpModal')
-          .setTitle(''); // Replace with your text
+          .setTitle('Support Ticket'); // Replace with your text
   
         const questionInput = new TextInputBuilder()
           .setCustomId('dashboardInquiryReason')

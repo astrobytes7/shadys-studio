@@ -4,7 +4,7 @@ module.exports = {
     name: "id",
     description: "Get the ID of your Roblox and Discord account!",
     cooldown: 5,
-    execute: async function (message, client, args) {
+    execute: async function (message, args, client) {
         if (message.author.bot) return;
         if (!message.guild) return;
 

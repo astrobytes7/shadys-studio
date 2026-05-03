@@ -4,7 +4,7 @@ module.exports = {
   customID: 'closeHelp',
 
   async execute(interaction) {
-    const requiredRoleId = ""; // Replace with your role ID
+    const requiredRoleId = "1472057214616473730"; // Replace with your role ID
 
     if (!interaction.member.roles.cache.has(requiredRoleId)) {
         return interaction.reply({
@@ -15,11 +15,11 @@ module.exports = {
 
     const modal = new ModalBuilder()
       .setCustomId('closeModal')
-      .setTitle(''); // Your custom title
+      .setTitle('Close Ticket'); // Your custom title
 
     const reasonInput = new TextInputBuilder()
       .setCustomId('closeReason')
-      .setLabel("") // Your custom label
+      .setLabel("Closing Reason") // Your custom label
       .setStyle(TextInputStyle.Paragraph)
       .setRequired(false);
 

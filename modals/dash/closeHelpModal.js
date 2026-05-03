@@ -2,7 +2,7 @@ const { AttachmentBuilder, EmbedBuilder } = require('discord.js');
   const DiscordTranscripts = require('discord-html-transcripts');
   const DashboardHelpTicket = require('../../models/dashboardHelpSchema');
   
-  const LOG_CHANNEL_ID = ''; // Replace with transcript channel id
+  const LOG_CHANNEL_ID = '1472057216336138252'; // Replace with transcript channel id
   
   module.exports = {
     customID: 'closeModal',
@@ -44,21 +44,21 @@ const { AttachmentBuilder, EmbedBuilder } = require('discord.js');
         });
   
         const dmEmbed = new EmbedBuilder()
-          .setTitle('') // Your Title
-          .setColor('#') // Your custom hex color
-          .setDescription(``) // Your description
+          .setTitle('Ticket Closed') // Your Title
+          .setColor('#292929') // Your custom hex color
+          .setDescription(`Your ticket has been closed. You can find the details below. Thank you for reaching out to **Shady's Studio**.`) // Your description
           .addFields(
             { name: 'Closure Reason', value: reason, inline: true },
             { name: 'Closed By', value: `<@${closer.id}>`, inline: true }
           )
           .setFooter({ text: `Ticket ID: ${ticket.ticketId}` })
-          .setImage('') // Your image url
+          .setImage('https://media.discordapp.net/attachments/1465184567970496532/1498076620907352205/Shady_Banners.png?ex=69f869d3&is=69f71853&hm=794dffa170d7cb7b2599328adc4666d4fb223eada0d878738ab85f9cf497de71&=&format=webp&quality=lossless&width=2834&height=178') // Your image url
           .setTimestamp();
   
         const logEmbed = new EmbedBuilder()
-          .setTitle('') // Your Title
-          .setColor('#') // Your custom hex color
-          .setImage('') // Your image url
+          .setTitle('Ticket Transcript') // Your Title
+          .setColor('#292929') // Your custom hex color
+          .setImage('https://media.discordapp.net/attachments/1465184567970496532/1498076620907352205/Shady_Banners.png?ex=69f869d3&is=69f71853&hm=794dffa170d7cb7b2599328adc4666d4fb223eada0d878738ab85f9cf497de71&=&format=webp&quality=lossless&width=2834&height=178') // Your image url
           .addFields(
             { name: 'Closure Reason', value: reason, inline: true },
             { name: 'Closed By', value: `<@${closer.id}>`, inline: true },

@@ -14,7 +14,7 @@ const {
 module.exports = {
     name: "verify",
     description: "Sends the verification panel.",
-    async execute(message) {
+    async execute(message, args, client) {
         await message.delete();
 
         const components = [
@@ -22,7 +22,7 @@ module.exports = {
                 .addMediaGalleryComponents(
                     new MediaGalleryBuilder().addItems(
                         new MediaGalleryItemBuilder().setURL(
-                            "https://images-ext-1.discordapp.net/external/OsksxyV8ZrGxO4PqD2SFoLY5WgG34Vy0GH1TNJrxFoc/https/api.docksys.xyz/images/banners/header/verification.png?format=webp&quality=lossless&width=1320&height=422"
+                            "https://media.discordapp.net/ephemeral-attachments/1498659810508279878/1498660082127208549/dubai_new_banners_36.png?ex=69f88ef7&is=69f73d77&hm=3b3f103ca59bad88399853c61004f1a8a65ad5d3bf8dcf01b6e4a03e55397a60&=&format=webp&quality=lossless&width=2834&height=849"
                         )
                     )
                 )

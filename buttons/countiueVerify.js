@@ -10,8 +10,8 @@ const {
 const { getRobloxInfo } = require("../utils/docksystem");
 
 const ADD_ROLE_ID = "1497972289080397994";
-const REMOVE_ROLE_ID = "1498521276283621477";
-const LOG_CHANNEL_ID = "1498521134943961239";
+const REMOVE_ROLE_ID = "1498728008494743713";
+const LOG_CHANNEL_ID = "1472057216336138252";
 
 module.exports = {
     customID: "continue-verify",

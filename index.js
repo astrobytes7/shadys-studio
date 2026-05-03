@@ -23,12 +23,16 @@ require('./utils/EventLoader.js')(client);
 require('./utils/RegisterCommands.js')(client);
 
 (async function () {
-    if (!client.config.mongoURL) {
+    if (!client.config.MONGOURL) {
         console.warn('Skipping database connection');
         return;
     }
-    await mongoose.connect(client.config.mongoURL);
-    console.log('I have connected to the database succesfully');
+    try {
+        await mongoose.connect(client.config.MONGOURL);
+        console.log('I have connected to the database successfully');
+    } catch (error) {
+        console.error('Failed to connect to the database:', error.message);
+    }
 })();
 
 client.login(client.config.TOKEN);
