@@ -31,7 +31,7 @@ module.exports = {
                 )
                 .addTextDisplayComponents(
                     new TextDisplayBuilder().setContent(
-                        "At **<:visionlogo_white:1483881372031652023> Vision**, we use **Dock Systems** to verify users. In order to gain access to the rest of the server, you must verify your Roblox account. Please click the **verification** button below this message to get started in the verification process."
+                        "At **<:emoji_57:1497817943390814378> Shadys Studio**, we use **Dock Systems** to verify users. In order to gain access to the rest of the server, you must verify your Roblox account. Please click the **verification** button below this message to get started in the verification process."
                     )
                 )
                 .addSeparatorComponents(
